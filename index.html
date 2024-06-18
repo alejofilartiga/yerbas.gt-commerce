@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/mediaqueries.css">
+    <script src="./assets/js/main.js"></script>
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png"/>
+    <title>Tienda de yerbas.gt</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <label for="menu-toggle" id="menu-label">
+                <img src="./assets/img/menu-toggle.png" alt="">
+            </label>
+            <div class="nav-img-container">
+                <img src="./assets/img/favicon.png" alt="" class="logo-nav">
+                <img src="./assets/img/mate-nav.png" class="mate-icon-nav"  alt="">
+                <h2 class="title-nav" >Yerbas GT</h2>
+            </div>
+            <div class="nav-product-container">
+                <a class="nav-btn-product" href="#products">PRODUCTOS</a>
+                <button data-quantity="0" class="btn-cart">
+                    <svg class="icon-cart" viewBox="0 0 24.38 30.52" height="30.52" width="24.38" xmlns="http://www.w3.org/2000/svg">
+                      <title>icon-cart</title>
+                      <path transform="translate(-3.62 -0.85)" d="M28,27.3,26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45L6.83,8.34h3V11a.76.76,0,0,0,1.52,0V8.34h8.92V11a.76.76,0,0,0,1.52,0V8.34h3L26.48,27.4a2.79,2.79,0,0,1-3,2.44Zm0,0"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="main-hero">
+                <div class="title-container">
+                    <h2>LA FELICIDAD</h2>
+                    <span>No exis...</span>
+                </div>
+                <div class="btn-hero-container">
+                    <a class="btn-hero" href="#products">Comprar</a>
+                    <a class="btn-hero" href="#about">Nosotros</a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img src="./assets/img/canhero.png" alt="Imagen de una Canarias Tradicional">
+            </div>
+        </section>
+        <section id="about">
+            <div class="info-container">
+                <h2 class="fancy-undeline">Conocenos</h2>
+                <p>En Yerbas GT nos dedicamos apasionadamente a traerte lo mejor de la yerba mate, y nuestra distribucion de Canarias garantiza una experiencia excepcional en cada sorbo. Con un enfoque en la calidad y la autenticidad. Nos esforzamos por ofrecer una selección diversa de yerbas despaladas que capturan la esencia pura y la tradición arraigada en cada paquete.</p>
+            </div>
+            <div class="abt-img-container">
+                <img src="./assets/img/aboutimg.png" alt="">
+                <div class="abt-card-content">
+                  <p class="abt-card-title">¿Por qué elegir Yerbas GT?</p>
+                  <ul class="abt-card-info">
+                    <li><span>Calidad Superior:</span> Nuestras yerbas despaladas son seleccionadas con los más altos estándares de calidad para garantizar un sabor excepcional en cada mate.</li>
+                    <li><span>Variedad:</span> Ofrecemos una amplia gama de productos para satisfacer los gustos y preferencias de todos nuestros clientes.</li>
+                    <li><span>Salud y Bienestar:</span> Promovemos un estilo de vida saludable, ofreciendo productos naturales y libres de aditivos.</li>
+                  </ul>
+                </div>
+              </div>
+        </section>
+        <section id="products">
+            <div class="title-product-container">
+                <h2>ELEGI UNA DE NUESTRAS MARCAS Y EMPEZA A SENTIR EL VERDADERO SABOR</h2>
+
+            </div>
+            <div class="categories-container">
+                <button class="btn-hero">CANARIAS</button>
+                <button class="btn-hero">REI VERDE</button>
+                <button class="btn-hero">OTRAS</button>
+            </div>
+            <div class="product-container">
+                <div class="card"> 
+                    <div class="image_container">
+                      <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+                        <path
+                          d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+                        ></path>
+                      </img>
+                    </div>
+                    <div class="title">
+                      <span>Rei Verde Clasica</span>
+                    </div>
+                    <div class="size">
+                      <span>Peso</span>
+                      <ul class="list-size">
+                        <li class="item-list"><button class="item-list-button">500gr</button></li>
+                        <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+                      </ul>
+                    </div>
+                    <div class="action">
+                      <div class="price">
+                        <span>$7290</span>
+                      </div>
+                      <button class="cart-button">
+                        <svg
+                          class="cart-icon"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          ></path>
+                        </svg>
+                        <span>Add to cart</span>
+                      </button>
+                    </div>
+                </div>
+                <div class="card"> 
+                  <div class="image_container">
+                    <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+                      <path
+                        d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+                      ></path>
+                    </img>
+                  </div>
+                  <div class="title">
+                    <span>Rei Verde Clasica</span>
+                  </div>
+                  <div class="size">
+                    <span>Peso</span>
+                    <ul class="list-size">
+                      <li class="item-list"><button class="item-list-button">500gr</button></li>
+                      <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+                    </ul>
+                  </div>
+                  <div class="action">
+                    <div class="price">
+                      <span>$7290</span>
+                    </div>
+                    <button class="cart-button">
+                      <svg
+                        class="cart-icon"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        ></path>
+                      </svg>
+                      <span>Add to cart</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="card"> 
+                <div class="image_container">
+                  <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+                    <path
+                      d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+                    ></path>
+                  </img>
+                </div>
+                <div class="title">
+                  <span>Rei Verde Clasica</span>
+                </div>
+                <div class="size">
+                  <span>Peso</span>
+                  <ul class="list-size">
+                    <li class="item-list"><button class="item-list-button">500gr</button></li>
+                    <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+                  </ul>
+                </div>
+                <div class="action">
+                  <div class="price">
+                    <span>$7290</span>
+                  </div>
+                  <button class="cart-button">
+                    <svg
+                      class="cart-icon"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                      ></path>
+                    </svg>
+                    <span>Add to cart</span>
+                  </button>
+                </div>
+                </div>
+                <div class="card"> 
+              <div class="image_container">
+                <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+                  <path
+                    d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+                  ></path>
+                </img>
+              </div>
+              <div class="title">
+                <span>Rei Verde Clasica</span>
+              </div>
+              <div class="size">
+                <span>Peso</span>
+                <ul class="list-size">
+                  <li class="item-list"><button class="item-list-button">500gr</button></li>
+                  <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+                </ul>
+              </div>
+              <div class="action">
+                <div class="price">
+                  <span>$7290</span>
+                </div>
+                <button class="cart-button">
+                  <svg
+                    class="cart-icon"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                  <span>Add to cart</span>
+                </button>
+              </div>
+                </div>
+                <div class="card"> 
+            <div class="image_container">
+              <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+                <path
+                  d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+                ></path>
+              </img>
+            </div>
+            <div class="title">
+              <span>Rei Verde Clasica</span>
+            </div>
+            <div class="size">
+              <span>Peso</span>
+              <ul class="list-size">
+                <li class="item-list"><button class="item-list-button">500gr</button></li>
+                <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+              </ul>
+            </div>
+            <div class="action">
+              <div class="price">
+                <span>$7290</span>
+              </div>
+              <button class="cart-button">
+                <svg
+                  class="cart-icon"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+                <span>Add to cart</span>
+              </button>
+            </div>
+                </div>
+                <div class="card"> 
+          <div class="image_container">
+            <img viewBox="0 0 24 24" src="./assets/img/reiabt.png" class="image">
+              <path
+                d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
+              ></path>
+            </img>
+          </div>
+          <div class="title">
+            <span>Rei Verde Clasica</span>
+          </div>
+          <div class="size">
+            <span>Peso</span>
+            <ul class="list-size">
+              <li class="item-list"><button class="item-list-button">500gr</button></li>
+              <li class="item-list"><button class="item-list-button">1kg</button></li>
+
+            </ul>
+          </div>
+          <div class="action">
+            <div class="price">
+              <span>$7290</span>
+            </div>
+            <button class="cart-button">
+              <svg
+                class="cart-icon"
+                stroke="currentColor"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+              <span>Add to cart</span>
+            </button>
+          </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-footer">
+            <div class="ft-info-container">
+                <div class="ft-title-container">
+                    <h2 class="fancy-undeline">CONTACTA CON NOSOTROS</h2>
+                    <p>En Yerbas GT, respondemos rápidamente a tus consultas y brindamos ayuda inmediata para solucionar cualquier problema que enfrentes.</p>
+                </div>
+                <div class="ft-contact-container">
+                    <div class="ft-description-container">
+                        <p>Contactanos directamente y recibi la mejor atencion:</p>
+                        <ul>
+                          <li><span>Contacto 1:</span> +54 11 3941-7566</li>
+                          <li><span>Contacto 2:</span> +54 11 3265-1458</li>
+                          <li><span>Ubicacion:</span> Liniers - CABA.</li>
+                        </ul>
+                    </div>
+                    <div class="rrss">
+                        <a href="https://www.instagram.com/yerbas.gt/" target="_blank" class="socialContainer containerOne">
+                          <svg class="socialSvg instagramSvg" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path></svg>
+                        </a>
+                        
+                        <a href="https://www.tiktok.com/@yerbas.gt/" target="_blank" class="socialContainer containerTwo">
+                          <svg class="socialSvg tiktokSvg" viewBox="0 0 19.738 22.466" height="22.466" width="19.738" xmlns="http://www.w3.org/2000/svg" data-name="Group 101" id="Group_101"><path fill="#000" transform="translate(-31.423 -0.39)" d="M51.151,6.015a5.661,5.661,0,0,1-3.42-1.143A5.662,5.662,0,0,1,45.469.39H41.8V10.414l0,5.49a3.325,3.325,0,1,1-2.281-3.151V9.029a7.218,7.218,0,0,0-1.058-.078,7.034,7.034,0,0,0-5.286,2.364,6.893,6.893,0,0,0,.311,9.505,7.158,7.158,0,0,0,.663.579,7.035,7.035,0,0,0,4.312,1.458,7.219,7.219,0,0,0,1.058-.078,7.011,7.011,0,0,0,3.917-1.959,6.868,6.868,0,0,0,2.06-4.887l-.019-8.2a9.3,9.3,0,0,0,5.688,1.933V6.014h-.011Z" data-name="Path 6566" id="Path_6566"></path></svg>
+                        </a>
+
+                        <a href="https://www.wa.link/2ajbfw" target="_blank" class="socialContainer containerThree">
+                          <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path></svg>
+                        </a>
+                    </div>                                   
+                </div>
+            </div>
+            <div class="form-legal-container">
+              <div class="form-container">
+                <div class="form">
+                    <span class="heading">Mandanos un mensaje</span>
+                    <input placeholder="Nombre" type="text" class="input">
+                    <input placeholder="Email" id="mail" type="email" class="input">
+                    <textarea placeholder="Escribe algo..." rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                    <div class="button-container">
+                    <div class="send-button">Enviar</div>
+                    <div class="reset-button-container">
+                        <div id="reset-btn" class="reset-button">Borrar</div>
+                    </div>
+                </div>
+            </div>
+            </div>
+              <div class="legal-container">
+                <p>Terminos y Condiciones.</p>
+                <p>Politicas de Privacidad.</p>
+                <p><span>Copyright  © 2024</span> YerbasGT. Todos los derechos reservados.</p>
+              </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

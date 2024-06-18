@@ -1,0 +1,166 @@
+/* MEDIAQUERIES --------------------------------- */
+
+/* Tablet: */
+
+@media (max-width: 992px){
+    nav{
+        height: 90px;
+    }
+
+    .mate-icon-nav,
+    .title-nav{
+        display: none;
+    }
+    .logo-nav{
+        display: flex;
+        width: 80px;
+    }
+    .nav-btn-product{
+        display: none;
+    }
+
+    .icon-cart{
+        height: 80px;
+        width: 30px;
+    }
+
+    #hero{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .title-container>h2{
+        padding-top: 10%;
+        transform: none;
+    }
+
+    .main-hero{
+        gap: 40px;
+        width: 100%;
+    }
+    .btn-hero-container{
+        justify-content: center;
+    }
+
+    .hero-img-container>img{
+        content: url("../img/canarias.png");
+        width: 550px;
+        height: 300px;
+    }
+
+    #about{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .info-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .info-container>h2{
+        text-align: center;
+        font-size: 50px;
+    }
+    .info-container>p{
+        font-size: 17px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .abt-img-container{
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .abt-card-info{
+        font-size: 18px;
+    }
+
+    .title-product-container>h2{
+        font-size: 25px;
+        padding: 12px;
+    }
+    .categories-container{
+        justify-content: center;
+
+    }
+    #contact-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ft-info-container,
+    .form-legal-container{
+        width: 100%;
+    }
+    .ft-title-container{
+        align-items: center;
+    }
+    .ft-title-container>h2{
+        text-align: center;
+        font-size: 31px;
+    }
+    .ft-title-container>p{
+        text-align: center;
+    }
+    .ft-contact-container,
+    .ft-description-container{
+        align-items: center;
+    }
+    .rrss{
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Smartphone: */
+
+@media (max-width: 576px){
+    .main-hero{
+        width: 100%;
+    }
+    .title-container{
+        padding-top: 10%;
+    }
+    .title-container>h2{
+        font-size: 60px;
+    }
+    .title-container>span{
+        font-size: 30px;
+    }
+    .hero-img-container>img{
+        width: 400px;
+        height: 210px;
+    }
+    .btn-hero-container{
+        width: 50%;
+    }
+    .btn-hero{
+        width: 150px;
+    }
+    .info-container>p{
+        font-size: 15px;
+        width: 85%;
+    }
+    .abt-img-container{
+        width: 80%;
+    }
+    .abt-card-info{
+        font-size: 15px;
+    }
+    .categories-container{
+        flex-wrap: wrap;
+    }
+    .categories-container>button{
+        width: 140px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* TV: */
