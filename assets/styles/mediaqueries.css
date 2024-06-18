@@ -132,8 +132,8 @@
         font-size: 30px;
     }
     .hero-img-container>img{
-        width: 400px;
-        height: 210px;
+        width: 300px;
+        height: 150px;
     }
     .btn-hero-container{
         width: 50%;
@@ -156,7 +156,10 @@
     }
     .categories-container>button{
         width: 140px;
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .info-container>h2{
+        font-size: 40px;
     }
 }
 
