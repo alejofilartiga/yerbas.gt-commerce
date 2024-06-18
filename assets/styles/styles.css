@@ -621,6 +621,10 @@ section{
     gap: 20px;
   }
 
+  .ft-title-mq{
+    display: none;
+  }
+
   .ft-title-container>h2{
     font-family: "Rubik Mono One", monospace;
     font-weight: 300;

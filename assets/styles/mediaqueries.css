@@ -165,6 +165,12 @@
         justify-content: center;
         text-align: center;
     }
+    .ft-title-container>.ft-title{
+        display: none;
+    }
+    .ft-title-mq{
+        display: flex;
+    }
 }
 
 
