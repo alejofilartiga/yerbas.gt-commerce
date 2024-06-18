@@ -126,7 +126,7 @@
         padding-top: 10%;
     }
     .title-container>h2{
-        font-size: 60px;
+        font-size: 50px;
     }
     .title-container>span{
         font-size: 30px;
@@ -149,7 +149,7 @@
         width: 80%;
     }
     .abt-card-info{
-        font-size: 15px;
+        font-size: 11px;
     }
     .categories-container{
         flex-wrap: wrap;
