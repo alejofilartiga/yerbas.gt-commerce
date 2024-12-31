@@ -114,11 +114,35 @@
         align-items: center;
         justify-content: center;
     }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    nav.active {
+        height: auto;
+    }
+    nav.active .nav-btn-product {
+        display: block;
+    }
 }
 
 /* Smartphone: */
 
 @media (max-width: 576px){
+    nav {
+        
+        align-items: space-between;
+    }
+
+    #menu {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
     .main-hero{
         width: 100%;
     }
@@ -171,9 +195,19 @@
     .ft-title-mq{
         display: flex;
     }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    nav.active {
+        height: auto;
+    }
+    nav.active .nav-btn-product {
+        display: block;
+    }
 }
-
-
-
 
 /* TV: */

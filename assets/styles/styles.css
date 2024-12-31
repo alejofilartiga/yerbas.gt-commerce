@@ -44,7 +44,36 @@ nav{
     cursor: pointer;
 }
 
+#menu-toggle {
+    display: none;
+}
 
+#menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #FAF9DA;
+    z-index: 1;
+}
+
+#menu a {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    background-color: #A3D9A5;
+}
+
+#menu-toggle:checked + #menu {
+    display: flex;
+}
 
 .nav-img-container{
     display: flex;
@@ -494,8 +523,9 @@ section{
     left: 50%;
     transform: translate(-50%, -50%);
   
-    width: 17rem;
-    fill: var(--light);
+    width: 60%;
+    height: 86%;
+    object-fit: cover;
   }
   
   .title {
