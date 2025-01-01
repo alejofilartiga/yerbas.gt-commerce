@@ -191,6 +191,69 @@ nav{
   }
   
 
+  .cart-container {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 300px;
+    max-height: 80vh; 
+    overflow-y: auto;
+    background-color: #174674;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+    z-index: 1; 
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.cart-container.visible {
+    display: block;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.cart-item img {
+    width: 70px; 
+    height: 70px; 
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.cart-item span {
+    margin-right: 10px;
+    color: white;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+.buy-button, .clear-button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #174674;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover, .clear-button:hover {
+    background-color: #0D1C2B;
+}
+
+
 /* SECTION HERO ------------------------ */
 
 main{
@@ -525,7 +588,7 @@ section{
   
     width: 60%;
     height: 86%;
-    object-fit: cover;
+    object-fit:contain;
   }
   
   .title {
@@ -879,8 +942,13 @@ section{
   color: #0D1C2B;
 }
 
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
-/* LEGAL INFO - (FOOTER SECTION) */
+/* LEGAL SECTION */
 
 .legal-container{
   display: flex;
@@ -897,6 +965,7 @@ section{
 .legal-container>p>span{
   font-weight: 800;
 }
+
 
 
 /* FIN */

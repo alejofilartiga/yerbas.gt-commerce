@@ -120,11 +120,12 @@
               <div class="form-container">
                 <div class="form">
                     <span class="heading">Mandanos un mensaje</span>
-                    <input placeholder="Nombre" type="text" class="input">
+                    <div id="error-message" class="error-message"></div>
+                    <input placeholder="Nombre" type="text" class="input" id="name">
                     <input placeholder="Email" id="mail" type="email" class="input">
                     <textarea placeholder="Escribe algo..." rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
                     <div class="button-container">
-                    <div class="send-button">Enviar</div>
+                    <div class="send-button" id="send-button">Enviar</div>
                     <div class="reset-button-container">
                         <div id="reset-btn" class="reset-button">Borrar</div>
                     </div>
