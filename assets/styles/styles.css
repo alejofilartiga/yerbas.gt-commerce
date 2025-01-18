@@ -561,6 +561,7 @@ section{
   
     padding: 1rem;
     width: 14rem;
+    height: 24rem; 
     background-color: var(--bg-card);
   
     border-radius: 1rem;
@@ -602,11 +603,13 @@ section{
     text-transform: capitalize;
     text-wrap: nowrap;
     text-overflow: ellipsis;
+    height: 2rem; 
   }
   
   .size {
     font-size: 0.75rem;
     color: var(--light);
+    height: 2rem;
   }
   
   .list-size {
@@ -651,6 +654,7 @@ section{
     display: flex;
     align-items: center;
     gap: 1rem;
+    height: 6rem;
   }
   
   .price {
@@ -677,7 +681,11 @@ section{
     text-wrap: nowrap;
  
     border-radius: 0.5rem;
-
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cart-button:hover {
+    background-color: var(--primary-800); 
   }
   
   .cart-button .cart-icon {

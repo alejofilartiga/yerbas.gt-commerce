@@ -144,6 +144,35 @@
         padding: 8px;
         font-size: 14px;
     }
+
+    .card {
+        width: 12rem;
+        height: 22rem; 
+    }
+    .image_container {
+        height: 12rem; 
+    }
+    .title {
+        height: auto; 
+        word-wrap: break-word; 
+        white-space: normal;
+    }
+    .size {
+        height: 2rem; 
+        margin-bottom: 1rem; 
+    }
+    .action {
+        height: auto; 
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem; 
+    }
+
+    .cart-button {
+        padding: 0.4rem;
+        font-size: 0.7rem;
+        width: 100%; 
+    }
 }
 
 /* MOBILE */
@@ -241,6 +270,35 @@
     .buy-button, .clear-button {
         padding: 6px;
         font-size: 12px;
+    }
+
+    .card {
+        width: 10rem;
+        height: 20rem; 
+    }
+    .image_container {
+        height: 10rem; 
+    }
+    .title {
+        height: auto; 
+        word-wrap: break-word; 
+        white-space: normal; 
+    }
+    .size {
+        height: 2rem; 
+        margin-bottom: 1rem; 
+    }
+    .action {
+        height: auto; 
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1rem; 
+    }
+
+    .cart-button {
+        padding: 0.3rem;
+        font-size: 0.65rem;
+        width: 100%;
     }
 }
 

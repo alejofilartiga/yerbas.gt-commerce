@@ -119,7 +119,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cartButton.dataset.quantity = cart.length;
     };
 
-    const addToCart = (product, size) => {
+    const addToCart = (product, size = '') => {
+        if (product.name !== "Termo Canarias" && !size) {
+            alert('Por favor, elige un peso antes de agregar al carrito.');
+            return;
+        }
         const productWithSize = { ...product, size };
         cart.push(productWithSize);
         updateCart();
@@ -164,10 +168,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('.item-list-button').forEach(button => {
             button.addEventListener('click', (e) => {
-                const size = e.target.dataset.size;
-                const productId = e.target.closest('.card').querySelector('.cart-button').dataset.id;
+                const sizeButtons = e.target.closest('.list-size').querySelectorAll('.item-list-button');
+                sizeButtons.forEach(btn => btn.classList.remove('selected'));
+                e.target.classList.add('selected');
+            });
+        });
+
+        document.querySelectorAll('.cart-button').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const productId = e.target.closest('.cart-button').dataset.id;
                 const product = selectedProducts.find(p => p.id == productId);
-                addToCart(product, size);
+                if (product.name === "Termo Canarias") {
+                    addToCart(product);
+                } else {
+                    const sizeButtons = e.target.closest('.card').querySelectorAll('.item-list-button');
+                    let selectedSize = '';
+                    sizeButtons.forEach(btn => {
+                        if (btn.classList.contains('selected')) {
+                            selectedSize = btn.dataset.size;
+                        }
+                    });
+                    addToCart(product, selectedSize);
+                }
             });
         });
     };
@@ -193,7 +215,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cartItem.classList.add('cart-item');
                 cartItem.innerHTML = `
                     <img src="${product.img}" alt="${product.name}">
-                    <span>${product.name} - ${product.size}</span>
+                    <span>${product.name}${product.size ? ' - ' + product.size : ''}</span>
                     <span>$${product.price}</span>
                 `;
                 cartContainer.appendChild(cartItem);
