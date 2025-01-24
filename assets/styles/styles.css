@@ -196,17 +196,19 @@ nav{
     top: 70px;
     right: 0;
     width: 300px;
-    max-height: 80vh; 
+    max-height: 100%; 
     overflow-y: auto;
-    background-color: #174674;
+    background-color: #b7babe;
     border: 1px solid #ccc;
+    border-radius: 0px 0px 0px 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 15px;
     display: none;
     z-index: 1; 
     max-width: 100%;
     box-sizing: border-box;
-    text-align: center; 
+    text-align: center;
+    font-size: 20px;
 }
 
 .cart-container.visible {
@@ -229,7 +231,7 @@ nav{
 
 .cart-item span {
     margin-right: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .cart-actions {
@@ -686,6 +688,7 @@ section{
   
   .cart-button:hover {
     background-color: var(--primary-800); 
+    color: var(--zinc-800);
   }
   
   .cart-button .cart-icon {

@@ -24,6 +24,9 @@
         width: 30px;
     }
 
+    .cart-container{
+        border-radius: 0px 0px 10px 10px;
+    }
     #hero{
         flex-direction: column;
         gap: 40px;
