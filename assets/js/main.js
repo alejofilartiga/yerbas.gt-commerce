@@ -279,3 +279,9 @@ document.addEventListener('DOMContentLoaded', () => {
         errorMessage.style.color = 'red';
     });
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    const fecha = document.getElementById("fecha");
+    const now = new Date().getFullYear();
+    fecha.innerText = now;
+  });
